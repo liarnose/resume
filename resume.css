@@ -1,0 +1,313 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 9pt;
+  font-weight: normal;
+  position: absolute; }
+
+body {
+  width: 182mm;
+  font-family: "Noto Sans Japanese"; }
+
+.page {
+  width: 182mm;
+  height: 257mm; }
+
+#page-1 {
+  top: 22mm;
+  left: 17mm;
+  width: 148mm;
+  height: 220mm; }
+
+#page-2 {
+  top: 22mm;
+  left: 199mm;
+  width: 148mm;
+  height: 220mm; }
+
+#svg-page-2 {
+  left: 182mm; }
+
+h1, h2, h3, h4 {
+  padding: 0.5mm 1mm;
+  display: inline-block; }
+
+span {
+  padding: 0.5mm;
+  display: inline-block; }
+
+p {
+  position: relative;
+  text-indent: 1em; }
+
+h1 {
+  font-size: 16pt;
+  top: -10mm; }
+
+.photo {
+  position: absolute;
+  top: -8mm;
+  left: 106mm;
+  width: 30mm;
+  height: 40mm; }
+
+.name-kana h2 {
+  font-size: 8pt;
+  width: 14mm;
+  height: 6m; }
+.name-kana span {
+  top: 0mm;
+  left: 14mm;
+  width: 68mm;
+  height: 6mm; }
+
+.name {
+  top: 6mm; }
+  .name h2 {
+    width: 14mm;
+    height: 6mm; }
+  .name span {
+    font-size: 24pt;
+    left: 14mm;
+    width: 68mm;
+    height: 14mm; }
+
+.sex {
+  left: 82mm; }
+  .sex h2 {
+    width: 14mm;
+    height: 6mm;
+    text-align: center; }
+  .sex span {
+    top: 6mm;
+    width: 14mm;
+    height: 14mm;
+    font-size: 14pt;
+    text-align: center;
+    padding-top: 4mm; }
+
+.birthday {
+  top: 20mm; }
+  .birthday h2 {
+    font-size: 8pt;
+    width: 14mm;
+    height: 6mm; }
+  .birthday span {
+    left: 14mm;
+    width: 82mm;
+    height: 6mm; }
+
+.cellphone-num {
+  top: 26mm; }
+  .cellphone-num h2 {
+    font-size: 8pt;
+    width: 14mm;
+    height: 6mm; }
+  .cellphone-num span {
+    left: 14mm;
+    width: 24mm;
+    height: 6mm; }
+
+.tellephone-num {
+  top: 26mm;
+  left: 48mm; }
+  .tellephone-num h2 {
+    font-size: 8pt;
+    width: 14mm;
+    height: 6mm; }
+  .tellephone-num span {
+    left: 14mm;
+    width: 24mm;
+    height: 6mm; }
+
+.e-mail {
+  top: 32mm; }
+  .e-mail h2 {
+    font-size: 8pt;
+    width: 14mm;
+    height: 6mm; }
+  .e-mail span {
+    left: 14mm;
+    width: 82mm;
+    height: 6mm; }
+
+.addres {
+  top: 38mm; }
+  .addres h2 {
+    width: 14mm;
+    height: 6mm; }
+  .addres span {
+    font-size: 16pt;
+    left: 0mm;
+    top: 6mm;
+    height: 8mm;
+    width: 148mm;
+    padding-left: 4mm; }
+  .addres .addres-num {
+    left: 14mm;
+    top: 0mm;
+    width: 82mm;
+    height: 6mm;
+    padding: 0.5mm; }
+
+.history {
+  top: 76mm; }
+  .history * {
+    position: relative; }
+  .history table {
+    border-spacing: 0mm; }
+  .history tr td {
+    font-size: 11pt;
+    height: 10mm; }
+  .history tr td:first-child {
+    width: 18mm;
+    text-align: center; }
+  .history tr td:first-child + td {
+    width: 14mm;
+    text-align: center; }
+  .history tr td:first-child + td + td {
+    width: 116mm;
+    padding: 0mm 4mm; }
+    .history tr td:first-child + td + td h3 {
+      width: 100%;
+      padding-left: 0mm;
+      text-align: center; }
+    .history tr td:first-child + td + td .table-lastline {
+      width: 100%;
+      padding-right: 4mm;
+      text-align: right; }
+  .history tr:first-child th {
+    height: 6mm; }
+  .history tr:first-child th:first-child {
+    width: 18mm; }
+  .history tr:first-child th:first-child + th {
+    width: 14mm; }
+  .history tr:first-child th:first-child + th + th {
+    width: 114mm; }
+
+.license {
+  top: 0mm; }
+  .license * {
+    position: relative; }
+  .license table {
+    border-spacing: 0mm; }
+  .license tr td {
+    font-size: 11pt;
+    height: 10mm; }
+  .license tr td:first-child {
+    width: 18mm;
+    text-align: center; }
+  .license tr td:first-child + td {
+    width: 14mm;
+    text-align: center; }
+  .license tr td:first-child + td + td {
+    width: 116mm;
+    padding: 0mm 4mm; }
+    .license tr td:first-child + td + td h3 {
+      width: 100%;
+      padding-left: 0mm;
+      text-align: center; }
+    .license tr td:first-child + td + td .table-lastline {
+      width: 100%;
+      padding-right: 4mm;
+      text-align: right; }
+  .license tr:first-child th {
+    height: 6mm; }
+  .license tr:first-child th:first-child {
+    width: 18mm; }
+  .license tr:first-child th:first-child + th {
+    width: 14mm; }
+  .license tr:first-child th:first-child + th + th {
+    width: 114mm; }
+  .license > div {
+    position: absolute;
+    top: 66mm;
+    widows: 148mm;
+    height: 14mm; }
+
+.hobby {
+  top: 84mm; }
+  .hobby h2 {
+    width: 74mm;
+    height: 6mm;
+    text-align: center; }
+  .hobby div {
+    top: 6mm;
+    width: 74mm;
+    height: 28mm;
+    padding: 0.5mm;
+    text-align: justify; }
+
+.skill {
+  top: 84mm;
+  left: 74mm; }
+  .skill h2 {
+    width: 74mm;
+    height: 6mm;
+    text-align: center; }
+  .skill div {
+    top: 6mm;
+    width: 74mm;
+    height: 28mm;
+    padding: 0.5mm;
+    text-align: justify; }
+
+.reason {
+  top: 122mm; }
+  .reason h2 {
+    width: 148mm;
+    height: 6mm;
+    text-align: center; }
+  .reason div {
+    top: 6mm;
+    width: 148mm;
+    height: 28mm;
+    padding: 0.5mm;
+    text-align: justify; }
+
+.selling-point {
+  top: 154mm; }
+  .selling-point h2 {
+    width: 148mm;
+    height: 6mm;
+    text-align: center; }
+  .selling-point div {
+    top: 6mm;
+    width: 148mm;
+    height: 38mm;
+    padding: 0.5mm;
+    text-align: justify; }
+
+.treatment {
+  top: 204mm; }
+  .treatment h2 {
+    width: 148mm;
+    height: 6mm;
+    text-align: center; }
+  .treatment div {
+    top: 6mm;
+    width: 148mm;
+    height: 10mm;
+    padding: 0.5mm;
+    text-align: justify; }
+
+@page {
+  size: 182mm 257mm;
+  margin: 0; }
+@media print {
+  .page {
+    position: relative;
+    page-break-after: always; }
+
+  #svg-page-2 {
+    top: 0mm;
+    left: 0mm; }
+
+  #page-2 {
+    top: 22mm;
+    left: 17mm; }
+
+  .name span {
+    display: none; } }

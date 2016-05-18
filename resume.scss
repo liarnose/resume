@@ -1,0 +1,434 @@
+//static values
+$PAGE_WIDTH : 182mm;
+$PAGE_HIGHT : 257mm;
+
+$CONTENT_WIDTH : 148mm;
+$CONTENT_HIGHT : 44 * 5mm;
+
+$SIDE_MARGIN : ($PAGE_WIDTH - $CONTENT_WIDTH)/2;
+$TOP_MARGIN : 22mm;
+$BOTTOM_MARGIN : 12mm;
+
+$PAD : 1mm;
+
+
+//load fonts
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+//reset,default
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-size: 9pt;
+    font-weight: normal;
+    position: absolute;
+}
+
+body {
+    width: $PAGE_WIDTH;
+    font-family: "Noto Sans Japanese";
+}
+
+.page {
+    width: $PAGE_WIDTH;
+    height: $PAGE_HIGHT;
+}
+
+#page-1 {
+    top: $TOP_MARGIN;
+    left: $SIDE_MARGIN;
+    
+    width: $CONTENT_WIDTH;
+    height: $CONTENT_HIGHT;
+}
+
+#page-2 {
+    top: $TOP_MARGIN;
+    left: $PAGE_WIDTH + $SIDE_MARGIN;
+    
+    width: $CONTENT_WIDTH;
+    height: $CONTENT_HIGHT;
+}
+
+#svg-page-2{
+    left: $PAGE_WIDTH;
+}
+
+h1,h2,h3,h4{
+    padding: 0.5mm 1mm;
+    display: inline-block;
+
+}
+
+span{
+    padding: 0.5mm;
+    display: inline-block;
+}
+
+p{
+    position: relative;
+    text-indent: 1em;
+}
+
+//main (first page)
+h1{
+    font-size: 16pt;
+    top: -10mm;
+}
+
+.photo{
+    position: absolute;
+    top: -8mm;
+    left: 106mm;
+    width: 30mm;
+    height: 40mm;
+}
+
+.name-kana{
+    h2{
+        font-size: 8pt;
+        width :14mm;
+        height: 6m;
+    }
+    span{
+        top: 0mm;
+        left: 14mm;
+        width: 68mm;
+        height: 6mm;
+    }
+}
+
+.name {
+    top: 6mm;
+    h2{
+        width: 14mm;
+        height: 6mm;
+    }
+    span{
+        font-size: 24pt;
+        left: 14mm;
+        width: 68mm;
+        height: 14mm;
+    }
+}
+
+.sex {
+    left: 82mm;
+    h2{
+        width: 14mm;
+        height: 6mm;
+        text-align: center;
+    }
+    span{
+        top: 6mm;
+        width: 14mm;
+        height: 14mm;
+        font-size: 14pt;
+        text-align: center;
+        padding-top: 4mm;
+    }
+}
+
+.birthday {
+    top: 20mm;
+    h2{
+        font-size: 8pt;
+        width:14mm;
+        height: 6mm;
+    }
+    span{
+        left:14mm;
+        width: 82mm;
+        height: 6mm;
+    }
+}
+
+.cellphone-num{
+    top: 26mm;
+    h2{
+        font-size: 8pt;
+        width: 14mm;
+        height: 6mm;
+    }
+    span{
+        left: 14mm;
+        width: 24mm;
+        height: 6mm;
+    }
+}
+
+.tellephone-num{
+    top: 26mm;
+    left: 48mm;
+    h2{
+        font-size: 8pt;
+        width: 14mm;
+        height: 6mm;
+    }
+    span{
+        left: 14mm;
+        width: 24mm;
+        height: 6mm;
+    }
+}
+
+.e-mail {
+    top: 32mm;
+    h2{
+        font-size: 8pt;
+        width:14mm;
+        height: 6mm;
+    }
+    span{
+        left:14mm;
+        width: 82mm;
+        height: 6mm;
+    }
+}
+
+.addres {
+    top: 38mm;
+    h2{
+        width: 14mm;
+        height: 6mm;
+    }
+    span{
+        font-size: 16pt;
+        left: 0mm;
+        top: 6mm;
+        height: 8mm;
+        width: 148mm;
+        padding-left: 4mm;
+    }
+    .addres-num {
+        left: 14mm;
+        top: 0mm;
+        width: 82mm;
+        height: 6mm;
+        padding: 0.5mm;
+    }
+}
+
+.history{
+    top: 76mm;
+    *{
+        position: relative;
+    }
+    table{
+        border-spacing: 0mm;
+    }
+    tr{
+        td{
+            font-size: 11pt;
+            height: 10mm;
+        }
+        td:first-child{
+            width: 18mm;
+            text-align: center;
+        }
+        td:first-child + td{
+            width: 14mm;
+            text-align: center;
+        }
+        td:first-child + td + td{
+            width: 116mm;
+            padding: 0mm 4mm;
+            h3{
+                width: 100%;
+                padding-left: 0mm;
+                text-align: center;
+            }
+            .table-lastline{
+                width: 100%;
+                padding-right: 4mm;
+                text-align: right;
+            }
+        }
+    }
+    tr:first-child{
+        th{
+            height: 6mm;
+        }
+        th:first-child{
+            width: 18mm;
+        }
+        th:first-child + th{
+            width: 14mm;
+        }
+        th:first-child + th +th{
+            width: 114mm;
+        }
+    }
+}
+//main (second page)
+
+.license{
+    top: 0mm;
+    *{
+        position: relative;
+    }
+    table{
+        border-spacing: 0mm;
+    }
+    tr{
+        td{
+            font-size: 11pt;
+            height: 10mm;
+        }
+        td:first-child{
+            width: 18mm;
+            text-align: center;
+        }
+        td:first-child + td{
+            width: 14mm;
+            text-align: center;
+        }
+        td:first-child + td + td{
+            width: 116mm;
+            padding: 0mm 4mm;
+            h3{
+                width: 100%;
+                padding-left: 0mm;
+                text-align: center;
+            }
+            .table-lastline{
+                width: 100%;
+                padding-right: 4mm;
+                text-align: right;
+            }
+        }
+    }
+    tr:first-child{
+        th{
+            height: 6mm;
+        }
+        th:first-child{
+            width: 18mm;
+        }
+        th:first-child + th{
+            width: 14mm;
+        }
+        th:first-child + th +th{
+            width: 114mm;
+        }
+    }
+    > div {
+        position: absolute;
+        top: 66mm;
+        widows: 148mm;
+        height: 14mm;
+    }
+}
+
+.hobby{
+    top: 84mm;
+    h2{
+        width: 74mm;
+        height: 6mm;
+        text-align: center;
+    }
+    div{
+        top: 6mm;
+        width: 74mm;
+        height: 28mm;
+        padding: 0.5mm;
+        text-align: justify;
+    }
+}
+
+.skill{
+    top: 84mm;
+    left: 74mm;
+    h2{
+        width: 74mm;
+        height: 6mm;
+        text-align: center;
+    }
+    div{
+        top: 6mm;
+        width: 74mm;
+        height: 28mm;
+        padding: 0.5mm;
+        text-align: justify;
+    }
+}
+
+.reason{
+    top: 122mm;
+    h2{
+        width: 148mm;
+        height: 6mm;
+        text-align: center;
+    }
+    div{
+        top: 6mm;
+        width: 148mm;
+        height: 28mm;
+        padding: 0.5mm;
+        text-align: justify;
+    }
+}
+
+.selling-point{
+    top: 154mm;
+    h2{
+        width: 148mm;
+        height: 6mm;
+        text-align: center;
+    }
+    div{
+        top: 6mm;
+        width: 148mm;
+        height: 38mm;
+        padding: 0.5mm;
+        text-align: justify;
+    }
+}
+
+.treatment{
+    top: 204mm;
+    h2{
+        width: 148mm;
+        height: 6mm;
+        text-align: center;
+    }
+    div{
+        top: 6mm;
+        width: 148mm;
+        height: 10mm;
+        padding: 0.5mm;
+        text-align: justify;
+    }
+}
+
+//paginate
+
+@page{
+  size: $PAGE_WIDTH $PAGE_HIGHT ;
+  margin: 0;
+}
+
+@media print{
+    .page{
+        position: relative;
+        page-break-after: always;
+    }
+    
+    #svg-page-2{
+        top: 0mm;
+        left: 0mm;
+    }
+    #page-2 {
+        top: $TOP_MARGIN;
+        left:  $SIDE_MARGIN;
+    }
+
+.name {
+    span{
+        display: none;
+    }
+}
+}
